@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //This is a common mistake, using a variable before it's declared. It causes a ReferenceError in strict mode, and a silent error in non-strict mode
+    console.log(myVar); 
+    var myVar = "Hello"; 
+  </script>
+</body>
+</html>
